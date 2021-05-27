@@ -1,7 +1,7 @@
 FROM mhart/alpine-node:latest
 MAINTAINER Anton Kastritskiy <halloy52@gmail.com>
 
-ENV SWAGGERLINT_VERSION=0.0.3 \
+ENV SWAGGERLINT_VERSION=0.0.10 \
     PATH=/usr/lib/node_modules/.bin:$PATH
 
 RUN npm install -g swaggerlint@${SWAGGERLINT_VERSION} && \
